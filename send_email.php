@@ -14,9 +14,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Send email
     if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
+        echo "<script>
+        sessionStorage.setItem('toast_message', 'success');
+        </script>
+        "
+        header("Location: index.html");
+        exit();
     } else {
-        echo "Message delivery failed!";
+        echo "<script> 
+        sessionStorage.setItem('toast_message', 'error');
+        </script>
+        ";
+        // header("location:")
+        // exit();
     }
 }
 ?>
