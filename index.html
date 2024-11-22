@@ -13,15 +13,6 @@
 
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <!-- End google font  -->
-   <!-- Include Toastr CSS for styling -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-
-<!-- Include jQuery, required by Toastr -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Include Toastr JavaScript for toast functionality -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
@@ -39,6 +30,15 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/app.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQY5692DSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KQY5692DSS');
+</script>
 </head>
 
 <body class="light">
@@ -72,23 +72,6 @@
   <!-- End All Js -->
 
 
-  <script>
-    // Check for toast message in sessionStorage and display it
-    document.addEventListener("DOMContentLoaded", function() {
-        const toastMessage = sessionStorage.getItem('toast_message');
-        
-        if (toastMessage) {
-            if (toastMessage === 'success') {
-                toastr.success('Message sent successfully!', 'Success');
-            } else if (toastMessage === 'error') {
-                toastr.error('Message delivery failed!', 'Error');
-            }
-            
-            // Clear the sessionStorage item after displaying the toast
-            sessionStorage.removeItem('toast_message');
-        }
-    });
-    </script>
 
   <header class="site-header sofax-header-section site-header--menu-center" id="sticky-menu">
     <div class="container">
@@ -121,7 +104,7 @@
                 <a href="#our-services" class="nav-link-item">Services</a>
               </li>
               <li class="nav-item">
-                <a href="#testimonials" class="nav-link-item">What Users Say</a>
+                <a href="#testimonials" class="nav-link-item">What Clients Say</a>
               </li>
             </ul>
           </nav>
@@ -233,7 +216,7 @@
             <div class="tg-heading-subheading animation-style3">
               <h2>Innovative Software Solutions for a Competitive Edge</h2>
             </div>
-            <p>The Alpha Nova (TAN), we craft one of the finest custom software tailored to your needs. We partner with startups and companies of all sizes to develop innovative and reliable solutions, including web design, custom applications, ERPs, and CRMs, that drive growth and success. Our commitment to advancing technology ensures your business remains competitive, with user-friendly and cost-effective software backed by a team of creative and dedicated engineers. </p>
+            <p>At The Alpha Nova (TAN), we craft the world’s finest custom software tailored to your needs. We partner with startups and companies of all sizes to develop innovative and reliable solutions, including web design, custom applications, ERPs, and CRMs, that drive growth and success. Our commitment to advancing technology ensures your business remains competitive, with user-friendly and cost-effective software backed by a team of creative and dedicated engineers. </p>
             <!-- <div class="extra-mt">
               <div class="sofax-iconbox-wrap2">
                 <div class="sofax-iconbox-icon2">
@@ -336,10 +319,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-4 col-md-6" id="id4-sofax-iconbox-data">
+        <div class="col-xl-4 col-md-6">
           <div class="sofax-iconbox-wrap wow fadeInUpX" style="min-height: 600px;" data-wow-delay="0.1s">
-<div class="sofax-iconbox-icon" style="text-align: center;">
-              <img class="w-50" src="assets/images/v1/undraw_mobile_development_re_wwsn.svg" alt="">
+            <div class="sofax-iconbox-icon">
+              <img class="w-25" src="assets/images/v1/undraw_mobile_development_re_wwsn.svg" alt="">
             </div>
             <div class="sofax-iconbox-data">
               <h4>Mobile App Development</h4>
@@ -348,10 +331,10 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6" id="id2-sofax-iconbox-data">
+        <div class="col-xl-4 col-md-6">
           <div class="sofax-iconbox-wrap wow fadeInUpX" style="min-height: 600px;" data-wow-delay="0.2s">
-<div class="sofax-iconbox-icon" style="text-align: center;">
-              <img class="w-50" src="assets/images/v1/undraw_web_development_0l6v.svg" alt="">
+            <div class="sofax-iconbox-icon">
+              <img class="w-25" src="assets/images/v1/undraw_web_development_0l6v.svg" alt="">
             </div>
             <div class="sofax-iconbox-data">
               <h4>Web Development</h4>
@@ -360,24 +343,22 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6"  id="id3-sofax-iconbox-data">
+        <div class="col-xl-4 col-md-6">
           <div class="sofax-iconbox-wrap wow fadeInUpX" style="min-height: 600px;" data-wow-delay="0.3s">
-<div class="sofax-iconbox-icon" style="text-align: center;">
-              <img class="w-50" src="assets/images/v1/undraw_analytics_re_dkf8.svg" alt="">
+            <div class="sofax-iconbox-icon">
+              <img class="w-25" src="assets/images/v1/undraw_analytics_re_dkf8.svg" alt="">
             </div>
             <div class="sofax-iconbox-data">
               <h4>Analytic Solutions</h4>
-              <p>Our Analytical Solutions service empowers your business with data-driven insights and advanced analytical tools. Whether you're aiming to improve customer experiences, streamline processes, or forecast trends, our tailored analytical strategies ensure you stay ahead in an ever-changing market landscape.
-              </p>
-              <!--<p>Our Analytic Software Solutions aim to make available specific information at your fingertips as and when needed so that our clients with this business intelligence, can always be on top of their game with precise decision making.</p>-->
+              <p>Our Analytic Software Solutions aim to make available specific information at your fingertips as and when needed so that our clients with this business intelligence, can always be on top of their game with precise decision making.</p>
               <!-- <a class="sofax-icon-btn" href="single-service.html">More details <img src="assets/images/v1/arrow-right.png" alt=""></a> -->
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6" id="id1-sofax-iconbox-data">
+        <div class="col-xl-4 col-md-6">
           <div class="sofax-iconbox-wrap wow fadeInUpX" style="min-height: 600px;" data-wow-delay="0.3s">
-<div class="sofax-iconbox-icon" style="text-align: center;">
-              <img class="w-50" src="assets/images/v1/undraw_programming_re_kg9v.svg" alt="">
+            <div class="sofax-iconbox-icon">
+              <img class="w-25" src="assets/images/v1/undraw_programming_re_kg9v.svg" alt="">
             </div>
             <div class="sofax-iconbox-data">
               <h4>Software Development</h4>
@@ -386,27 +367,26 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6"  id="id5-sofax-iconbox-data">
+        <div class="col-xl-4 col-md-6">
           <div class="sofax-iconbox-wrap wow fadeInUpX" style="min-height: 600px;" data-wow-delay="0.3s">
-<div class="sofax-iconbox-icon" style="text-align: center;">
-              <img class="w-50" src="assets/images/v1/undraw_wireframing_re_q6k6.svg" alt="">
+            <div class="sofax-iconbox-icon">
+              <img class="w-25" src="assets/images/v1/undraw_wireframing_re_q6k6.svg" alt="">
             </div>
             <div class="sofax-iconbox-data">
               <h4>Product Design</h4>
-              <p>We work with modern design technologies and ideas to build fully responsive & mobile friendly software & websites solutions to our clients.</p>
+              <p>We work with modern design technologies and ideas to build fully responsive & mobile friendly software & websites solutions to our clients. We offer a range of app & web designing and development services including Search Engine Optimization (SEO) & Social Media Marketing (SMM).</p>
               <!-- <a class="sofax-icon-btn" href="single-service.html">More details <img src="assets/images/v1/arrow-right.png" alt=""></a> -->
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6"  id="id6-sofax-iconbox-data">
+        <div class="col-xl-4 col-md-6">
           <div class="sofax-iconbox-wrap wow fadeInUpX" style="min-height: 600px;" data-wow-delay="0.3s">
-<div class="sofax-iconbox-icon" style="text-align: center;">
-              <img class="w-50" src="assets/images/v1/undraw_maintenance_re_59vn.svg" alt="">
+            <div class="sofax-iconbox-icon">
+              <img class="w-25" src="assets/images/v1/undraw_maintenance_re_59vn.svg" alt="">
             </div>
             <div class="sofax-iconbox-data">
               <h4>Database Administration</h4>
-              <p>We manage your data assets efficiently and securely. Our comprehensive solutions cover database design, implementation, maintenance, and optimization, tailored to your business needs. With expertise in both on-premises and cloud-based systems, we ensure high availability, robust security, and peak performance.</p>
-              <!--<p>We offer complete Database Administration services throughout the gamut be it performance analysis or database design. Our DBA & DBM services drive high-performance operations while reducing complexity, optimizing results, and improving your return on investment. With our DBA & DBM services our clients will be able to focus on their other core activities while we handle mission-critical applications turning them into simple, seamless processes.</p>-->
+              <p>We offer complete Database Administration services throughout the gamut be it performance analysis or database design. Our DBA & DBM services drive high-performance operations while reducing complexity, optimizing results, and improving your return on investment. With our DBA & DBM services our clients will be able to focus on their other core activities while we handle mission-critical applications turning them into simple, seamless processes.</p>
               <!-- <a class="sofax-icon-btn" href="single-service.html">More details <img src="assets/images/v1/arrow-right.png" alt=""></a> -->
             </div>
           </div>
@@ -543,15 +523,15 @@
         <div class="col-lg-12">
           <div class="sofax-default-content tac text-center">
             <h2 class="text-center">Our Journey in Numbers</h2>
-            <p class="text-center py-5">From 25+ happy clients to 4,000+ hours dedicated to excellence, our global reach spans 20+ regions—all powered by countless cups of coffee. These numbers reflect our commitment to delivering quality and innovation in every project.</p>
+            <p class="text-center py-5">From 100+ happy clients to 40,000+ hours dedicated to excellence, our global reach spans 20+ regions—all powered by countless cups of coffee. These numbers reflect our commitment to delivering quality and innovation in every project.</p>
             <div id="sofax-counter"></div>
             <div class="sofax-counter-wrap-v5">
               <div class="sofax-counter-data-v5">
-                <h2><span data-percentage="25 " class="sofax-counter"></span>+</h2>
+                <h2><span data-percentage="100 " class="sofax-counter"></span>+</h2>
                 <p>Happy Clients</p>
               </div>
               <div class="sofax-counter-data-v5">
-                <h2><span data-percentage="4000" class="sofax-counter"></span>+</h2>
+                <h2><span data-percentage="40000" class="sofax-counter"></span>+</h2>
                 <p>Hours Worked</p>
               </div>
               <div class="sofax-counter-data-v5">
@@ -639,8 +619,8 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="sofax-main-field">
-                    <label>Phone Number</label>
-                    <input type="tel" name="phone" placeholder="Phone Number:">
+                    <label>Your Phone no</label>
+                    <input type="tel" name="phone" placeholder="Phone No:">
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -741,21 +721,20 @@
             <div class="sofax-footer-menu ml-100 sofax-footer-active">
               <h5>Our Services</h5>
               <ul>
-                <li><a href="#id1-sofax-iconbox-data">Software Development</a></li>
-                <li><a href="#id2-sofax-iconbox-data">Web Development</a></li>
-                <li><a href="#id3-sofax-iconbox-data">Analytic Solutions</a></li>
-                <li><a href="#id4-sofax-iconbox-data">Mobile App Development</a></li>
-                <li><a href="#id5-sofax-iconbox-data">Product Design</a></li>
-                <li><a href="#id6-sofax-iconbox-data">Database Administration</a></li>
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Analytic Solutions</a></li>
+                <li><a href="#">Mobile App Development</a></li>
+                <li><a href="#">Product Design</a></li>
+                <li><a href="#">Database Administration</a></li>
               </ul>
             </div>
           </div>
           <div class="col-xl-4 col-md-6">
             <div class="sofax-footer-menu ml-50">
-              <h5>Contact Info</h5>
+              <h5>Contacts Info</h5>
               <ul>
-                <!--<li><a href="">Canada | USA | Germany | Sri Lanka</a></li>-->
-                <li>Canada | USA | Germany | Sri Lanka</li>
+                <li><a href="">Canada | Sri Lanka</a></li>
                 <li><a href="mailto:info@thealphanova.com">info@thealphanova.com</a></li>
                 <li><a href="tel:+14374245384">Mobile No: +1 437 424 5384</a></li>
               </ul>
