@@ -43,6 +43,7 @@
     display: flex;
     justify-content: space-around; /* Space out team members */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    text-align: center;
 }
 
 .team-member {
@@ -63,7 +64,8 @@
     width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Circular images */
-    margin-bottom: 10px; /* Space below the image */
+    margin: 0 auto 10px; /* Center the image and space below it */
+    display: block; /* Make the image a block element to center it */
 }
 
 .team-member h3 {
