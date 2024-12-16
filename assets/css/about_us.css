@@ -1,24 +1,33 @@
+.sofax-section-about_us {
+    margin: 40px 0; /* Space above and below the section */
+    text-align: center; /* Center align the images */
+}
+
 .about-images {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 30px; /* Adjust as needed */
-    padding: 10px;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center align items */
 }
 
 .about-image-item {
-    flex: 1 1 calc(33.333% - 20px); /* Three images in a row with space */
-    margin: 10px; /* Space between images */
-    border-radius: 20%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+    flex: 1 1 200px; /* Allow items to grow and shrink, with a base width of 200px */
+    margin: 10px; /* Space around each image */
+    max-width: 300px; /* Maximum width for each image item */
 }
 
 .about-image-item img {
-    width: 100%; /* Make images responsive */
+    width: 100%; /* Make images responsive to the container */
     height: auto; /* Maintain aspect ratio */
-    border-radius:10px; /* Optional: Rounded corners */
+    border-radius: 2px; /* Optional: Rounded corners for images */
+    box-shadow: 0 1px 3px rgba(175, 174, 174, 0.1); /* Optional: Light shadow for better appearance */
 }
 
+/* Media Queries for Smaller Devices */
+@media (max-width: 600px) {
+    .about-image-item {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
 
 .team-section {
     margin-top: 40px; /* Space above the team section */
@@ -42,7 +51,7 @@
     padding: 15px; /* Padding inside each member box */
     background-color: #f9f9f9; /* Light background color */
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+    box-shadow: 0 2px px rgba(0, 0, 0, 0.1); /*Optional: Add shadow for better appearance*/
     transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
