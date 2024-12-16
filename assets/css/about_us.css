@@ -1,0 +1,162 @@
+.about-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px; /* Adjust as needed */
+    padding: 10px;
+}
+
+.about-image-item {
+    flex: 1 1 calc(33.333% - 20px); /* Three images in a row with space */
+    margin: 10px; /* Space between images */
+    border-radius: 20%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+}
+
+.about-image-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius:10px; /* Optional: Rounded corners */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-image-item {
+        flex: 1 1 calc(50% - 20px); /* Two images in a row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image-item {
+        flex: 1 1 100%; /* One image in a row on very small screens */
+    }
+}
+.team-section {
+    margin-top: 40px; /* Space above the team section */
+    text-align: center; /* Center align text */
+}
+
+.team-section h2 {
+    font-size: 32px; /* Heading size */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around; /* Space out team members */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.team-member {
+    flex: 1 1 calc(30% - 20px); /* Three members in a row with space */
+    margin: 10px; /* Space around each member */
+    padding: 15px; /* Padding inside each member box */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.team-member img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.team-member h3 {
+    font-size: 20px; /* Name size */
+    margin: 10px 0; /* Space above and below the name */
+}
+
+.team-member p {
+    font-size: 14px; /* Description size */
+    line-height: 1.5; /* Line height for readability */
+}.team-section {
+    margin-top: 40px; /* Space above the team section */
+    text-align: center; /* Center align text */
+}
+
+.team-section h2 {
+    font-size: 28px; /* Heading size */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around; /* Space out team members */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.team-member {
+    flex: 1 1 calc(30% - 20px); /* Three members in a row with space */
+    margin: 10px; /* Space around each member */
+    padding: 15px; /* Padding inside each member box */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+.team-member img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height to match the width */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.team-member h3 {
+    font-size: 20px; /* Name size */
+    margin: 10px 0; /* Space above and below the name */
+}
+
+.team-member p {
+    font-size: 14px; /* Description size */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.news-section {
+    margin-top: 40px; /* Space above the news section */
+    text-align: center; /* Center align text */
+}
+
+.news-section h2 {
+    font-size: 28px; /* Heading size */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.news-items {
+    display: flex;
+    flex-direction: column; /* Stack news items vertically */
+    align-items: center; /* Center align items */
+}
+
+.news-item {
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside each news item */
+    margin: 10px 0; /* Space between news items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+    width: 80%; /* Width of the news item */
+    max-width: 600px; /* Maximum width */
+}
+
+.news-item h3 {
+    font-size: 20px; /* Title size */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.news-item p {
+    font-size: 16px; /* Paragraph size */
+    line-height: 1.5; /* Line height for readability */
+}
